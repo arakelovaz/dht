@@ -9,4 +9,5 @@ Added persistance layer to MongoDB
 - kademlia
 - asyncio
 - pymongo
+- flask
 - MongoDB
