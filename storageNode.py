@@ -25,7 +25,7 @@ loop.set_debug(True)
 persistentStorage = PersistentStorage(mongourl=mongoURL, db=db, collection=collection)
 
 storageNode = Server(storage=persistentStorage)
-loop.run_until_complete(storageNode.listen(8466))
+loop.run_until_complete(storageNode.listen(8468))
 loop.run_until_complete(storageNode.bootstrap([(rootNodeAddress, rootNodePort)]))
 
 try:

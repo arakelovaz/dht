@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export MONGOHOST=127.0.0.1
+export MONGOHOST=mongodb
 export MONGOPORT=27017
 export MONGOURL=mongodb://$MONGOHOST:$MONGOPORT
 export MONGODBNAME=dht

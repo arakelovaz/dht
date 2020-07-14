@@ -19,7 +19,7 @@ log.setLevel(logging.DEBUG)
 loop.set_debug(True)
 # Create a node and start listening on port 8468
 node = Server()
-loop.run_until_complete(node.listen(8465)) #### it was 8469
+loop.run_until_complete(node.listen(8468))
 loop.run_until_complete(node.bootstrap([(rootNodeAddress, rootNodePort)])) #<<<<<< It was 8468
 
 try:

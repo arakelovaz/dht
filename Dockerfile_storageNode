@@ -1,0 +1,11 @@
+FROM python
+
+RUN pip install -q pymongo kademlia
+
+WORKDIR /app
+
+COPY persistentStorage.py storageNode.py storageNode.sh ./
+
+EXPOSE 8468
+
+CMD ./storageNode.sh

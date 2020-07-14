@@ -1,0 +1,9 @@
+FROM python
+
+RUN pip install -q kademlia
+
+WORKDIR /app
+
+COPY get.py set.py ./
+
+CMD bash
